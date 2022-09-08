@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: flex;
+}
+
+#sideBar{
+    height: 700px;
+    padding: 30px;
+    background-color: rebeccapurple;
+}
+
+#sideBar>li{
+    list-style: none;
+    margin-top: 30px;
+}
+#sideBar>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+#main{
+    height: 700px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(120, 200, 203);
+}
+#info{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#about{
+    background-color: chartreuse;
+    height: 200px;
+}
+#about>li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#hello{
+    font-size: 30px;
+}
+#name{
+    font-size: 25px;
+}
+#do{
+    font-size: 22px;
+}
+#downloadCv{
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+}
+#downloadCv:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+#contactMe{
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#contactMe:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+#profile{
+    height: 450px;
+}
+#profile>img{
+    height: 100%;
+}
+
+
