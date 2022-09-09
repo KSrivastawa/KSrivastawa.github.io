@@ -38,13 +38,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(208, 238, 228);
     justify-content: space-evenly;
     width: 80%;
 }
 #about{
-    background-color: chartreuse;
+
     height: 200px;
+    padding: 5px;
 }
 #about>li{
     list-style: none;
@@ -89,6 +90,7 @@
 }
 #profile{
     height: 450px;
+  
 }
 #profile>img{
     height: 100%;
