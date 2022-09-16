@@ -82,7 +82,6 @@
   }
   
   .highlightedText:after {
-    background-color: #06177c;
     content: " ";
     height: 20%;
     position: absolute;
@@ -95,6 +94,7 @@
   
   .changingRolesDiv {
     position: relative;
+    color: #7e2cde;
   }
   
   .aboutDiv {
