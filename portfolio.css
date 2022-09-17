@@ -147,7 +147,6 @@
   }
   
   .skillsTitle > h1:after {
-    background-color: #506aff;
     content: " ";
     height: 20%;
     position: absolute;
@@ -190,7 +189,6 @@
   }
   
   .proficienciesTitle > h1:after {
-    background-color: #06177c;
     content: " ";
     height: 20%;
     position: absolute;
@@ -218,7 +216,6 @@
   }
   
   .projectTitle > h1:after {
-    background-color: #506aff;
     content: " ";
     height: 20%;
     position: absolute;
@@ -303,7 +300,6 @@
   }
   
   .statisticsTitle > h1::after {
-    background-color: #506aff;
     content: " ";
     height: 20%;
     position: absolute;
@@ -347,3 +343,6 @@
     cursor: pointer;
   }
   
+#sfsk{
+  margin-bottom: -40px;
+}
