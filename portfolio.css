@@ -203,6 +203,10 @@
     color: white;
   }
   
+  .prodesc{
+    color: white;
+  }
+
   /* Project Div */
   #project {
     min-height: 120vh;
