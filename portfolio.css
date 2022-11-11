@@ -60,7 +60,7 @@
   
   #profileSection > .row {
     background: linear-gradient(
-        rgba(208, 212, 120, 0.9) 0%,
+        rgba(3, 69, 64, 0.9) 0%,
         rgba(3, 69, 64, 0.9) 100%
       ),
       url("/resources/profile-bg.jpg");
@@ -94,11 +94,11 @@
   
   .changingRolesDiv {
     position: relative;
-    color: #7e2cde;
+    color: rgba(146, 200, 47, 0.9);
   }
   
   .aboutDiv {
-    font-size: 17px;
+    font-size: 23px;
     font-family: "Roboto";
   }
   
@@ -176,8 +176,7 @@
   #proficiencies {
     min-height: 80vh;
     /* background-color: #b7c2ff; */
-    background-color: #7e2cde;
-    background-color: #684bf9;
+    background-color: rgba(3, 69, 64, 0.9);
   }
   
   .proficienciesTitle > h1 {
@@ -292,7 +291,15 @@
   }
   
   /* Stats */
+  #statistics {
+    background: linear-gradient(
+        rgba(3, 69, 64, 0.9) 0%,
+        rgba(3, 69, 64, 0.9) 100%
+      ),
+      url("/resources/profile-bg.jpg");
+  }
   .statisticsTitle > h1 {
+    color: white;
     font-weight: 700;
     margin-top: 100px;
     position: relative;
@@ -311,11 +318,13 @@
   
   .individualStat {
     width: 140px;
+    color: white;
     text-align: center;
   }
   
   .individualStat > div:nth-child(1) {
     margin: auto;
+    color: white;
     font-size: 28px;
     font-weight: 600;
     height: 130px;
@@ -329,7 +338,11 @@
   
   /* Contact Footer */
   #contact {
-    background: url("/resources/footer.png");
+    background: linear-gradient(
+        rgba(3, 69, 64, 0.9) 0%,
+        rgba(3, 69, 64, 0.9) 100%
+      ),
+      url("/resources/profile-bg.jpg");
     min-height: 22vh;
     color: black;
   }
