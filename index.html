@@ -36,6 +36,7 @@
                 <li class="nav-item"><a class="nav-link" href="#project"><i class="fas fa-file-code mx-4"></i> Project</a></li>
                 <li class="nav-item"><a class="nav-link" href="#statistics"><i class="fas fa-chart-bar mx-4"></i> Statistics</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-comments mx-4"></i> Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1m4lWQIFOsShE-Y_seN37_ge6VgXWIQ3E/view" target="_blank"><i class="fas fa-file-code mx-4"></i> Get Resume</a></li>
               </ul>
             </div>
         </nav>
@@ -52,7 +53,7 @@
                     <li class="nav-item"><a class="nav-link" href="#project"><i class="fas fa-file-code mx-4"></i> Project</a></li>
                     <li class="nav-item"><a class="nav-link" href="#statistics"><i class="fas fa-chart-bar mx-4"></i> Statistics</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-comments mx-4"></i> Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1m4lWQIFOsShE-Y_seN37_ge6VgXWIQ3E/view"><i class="fas fa-file-code mx-4"></i> Get Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1m4lWQIFOsShE-Y_seN37_ge6VgXWIQ3E/view" target="_blank"><i class="fas fa-file-code mx-4"></i> Get Resume</a></li>
                   </ul>
                 </nav>
           </div>
@@ -391,19 +392,39 @@
           </div>
         </div>
 
-        <!-- Github Calendar -->
-        <div id="githubCommits" class="row">
-          <div class="col offset-lg-3 offset-xl-2 p-md-5">
-            <div class="d-none d-md-block" >
-              -- GitHub Commits --
-              <div class="calendar">  
-                
-                -- Loading stuff --
-                Loading the data just for you.
+        <div>
+          <section class="skills section" id="skills">
+            <h2 class="section__title">My Github Contribution</h2>
+            <span class="section__subtitle">My technical level</span>
+            <div className="graph" style="display: flex; justify-content: center; margin-top: 10px;">
+              <img
+                src='http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KSrivastawa&theme=github_dark' />
+            </div>
+            <div className="cards" style="display: flex; flex-wrap: wrap; margin-top: 10px; justify-content: center;">
+              <img src='http://github-profile-summary-cards.vercel.app/api/cards/stats?username=KSrivastawa&theme=github_dark'
+                style="margin-right: 13px;" />
+              <img
+                src='http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=KSrivastawa&theme=github_dark&utcOffset=8'
+                style="margin-left: 1px;" />
+            </div>
+            </section>
+
+            <h3 id="gitCal"> Github Calendar </h3>
+            <div id="githubCommits" class="row">
+              <div class="col offset-lg-3 offset-xl-2 p-md-5">
+                <div class="d-none d-md-block" >
+                  -- GitHub Commits --
+                  <div class="calendar">  
+                    
+                    -- Loading stuff --
+                    Loading the data just for you.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
         </div>
+
+       
        
 
         <!-- Contact Footer -->
