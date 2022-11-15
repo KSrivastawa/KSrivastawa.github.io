@@ -24,3 +24,9 @@ function changingRoles(changingRolesTextIndex) {
     changingRolesTextIndex += 1;
   }
 }
+
+doucment.getElementById("rSume").addEventListner( "click", ()=>{
+  window.open( "https://drive.google.com/file/d/1m4lWQIFOsShE-Y_seN37_ge6VgXWIQ3E/view" , "_blank" )  
+} );
+
+
