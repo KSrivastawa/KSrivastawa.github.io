@@ -1,463 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ketan Srivastawa</title>
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <head>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
-    <!-- Github Calendar CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
-    <div class="container-fluid">
-        <!-- Mobile Top Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light d-lg-none">
-            <a class="navbar-brand" style="color: white;" href="#">PORTFOLIO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" ></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fas fa-user mx-4"></i> Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-check mx-4"></i>Stacks & Tools</a></li>
-                <li class="nav-item"><a class="nav-link" href="#proficiencies"><i class="fas fa-server mx-4"></i> Proficiencies</a></li>
-                <li class="nav-item"><a class="nav-link" href="#project"><i class="fas fa-file-code mx-4"></i> Project</a></li>
-                <li class="nav-item"><a class="nav-link" href="#statistics"><i class="fas fa-chart-bar mx-4"></i> Statistics</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-comments mx-4"></i> Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1m4lWQIFOsShE-Y_seN37_ge6VgXWIQ3E/view" target="_blank"><i class="fas fa-file-code mx-4"></i> Get Resume</a></li>
-              </ul>
-            </div>
-        </nav>
-        <div class="row">
-
-          <!-- Side Nav bar -->
-          <div class="col-xl-2 col-lg-3 d-none d-lg-block" id="sideNavBar">
-  
-              <nav class="nav-menu mt-5" >
-                  <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fas fa-user mx-4"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-check mx-4"></i>Stacks & Tools</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proficiencies"><i class="fas fa-server mx-4"></i> Proficiencies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#project"><i class="fas fa-file-code mx-4"></i> Project</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#statistics"><i class="fas fa-chart-bar mx-4"></i> Statistics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-comments mx-4"></i> Contact</a></li>
-                    <li class="nav-item"><a href="resources/Ketan-Srivastawa-Resume.pdf" download="Ketan-Srivastawa-Resume"  
-                      onclick="window.open('https://drive.google.com/file/d/1m4lWQIFOsShE-Y_seN37_ge6VgXWIQ3E/view')">
-                      <i class="fas fa-file-code mx-4"></i>Resume</a></li>
-                  </ul>
-                </nav>
-             
-          </div>
-  
-          <!-- Profile Section -->
-          <div class="col-xl-10 col-lg-9 offset-xl-2 offset-lg-3">
-            <section id="profileSection">
-              <div class="row justify-content-center border border-primary" style="min-height: 100vh;">
-                <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column text-light profileTitle">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4 class="text-md-center">Hi, my name is</h4>
-                    </div>
-                    <div class="col-12">
-                      <div class="d-flex flex-column flex-md-row flex-lg-column flex-xl-row justify-content-center align-items-lg-center">
-                        <h2 class="highlightedText">KETAN</h2>
-                        <h2 class="highlightedText ml-md-3">SRIVASTAWA</h2>
-                      </div>    
-                    </div>
-                    <!-- Changing Roles Div -->
-                    <div class="col-12 text-md-center text-lg-left mt-xl-3 mb-xl-5 changingRolesDiv">
-                      <div id="changingRoles"></div>
-                    </div>
-
-                    <div class="col-12 px-md-5 pr-lg-0 pl-xl-3">
-                      <p class="aboutDiv">
-                        An aspiring Full Stack Developer, that enjoys every part of his work, from
-                        working in the FrontEnd or Backend, to communicating and collaborating, with different people, towards a common goal.
-                        The very idea of CREATING something meaningful, keeps me going.
-                      </p>
-                    </div>
-
-                    
-                  </div>
-
-                </div>
-                
-                <div class="col-xl-4 col-lg-6 order-1 order-lg-2 text-center">
-                  <img src="resources/profile pic 1.png" class="img-fluid img-thumbnail rounded-circle" width="300px" alt="Profile Pic">
-                  <div class="contactInProfileSection d-none d-lg-block">
-                    
-                    <div id="sfsk">
-                    <div> <h3 style="color: White">Skills</h3> </div>
-                    <div> <h5 style="color: rgb(214, 214, 244)">Problem Solving mindset</h5> </div>
-                    <div> <h5 style="color: rgb(214, 214, 244)">Adaptability</h5> </div>
-                    <div> <h5 style="color: rgb(214, 214, 244)">Team Work</h5> </div>
-                  </div>
-                  </div>
-                </div>
-            
-                <div class="col-xl-12 text-center profileButtons order-3">
-                  <a href="#project" class="btn btn-success mr-3">PROJECTS</a>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div id="skills" class="row">
-          <div class="col offset-xl-2 offset-lg-3">
-
-            <div class="container">
-              <div class="skillsTitle my-3">
-                <h1 class="mx-auto">TECH STACKS AND TOOLS</h>
-              </div>
-  
-              <div class="row mt-5 text-center">
-                <div class="col-6 col-md-4 col-lg-3">
-                  <div class="skillImages">
-                    <img src="resources/1597473646250.png" class="card-img-top" alt="HTML5">
-                    <div class="poppinsFont">HTML 5</div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                  <div class="skillImages">
-                    <img src="resources/1597473854064.png" class="card-img-top" alt="CSS3">
-                    <div>CSS 3</div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                  <div class="skillImages">
-                    <img src="resources/1597474141988.png" class="card-img-top py-auto" alt="javascript">
-                    <div>JAVASCRIPT</div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                  <div class="skillImages">
-                    <img src="resources/1597473975822.png" class="card-img-top" alt="JAVA">
-                    <div>JAVA</div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                  <div class="skillImages">
-                    <img src="resources/1597474101858.png" class="card-img-top" alt="MySQL">
-                    <div>MySQL</div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                  <div class="skillImages">
-                    <img src="resources/1597475665160.png" class="card-img-top" alt="Github">
-                    <div>Github</div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                  <div class="skillImages">
-                    <img src="resources/mongo db.png" class="card-img-top" alt="Spring Boot">
-                    <div>Spring Boot</div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                  <div class="skillImages">
-                    <img src="resources/node js.jpg" class="card-img-top" alt="Node">
-                    <div>Spring</div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Proficiencies -->
-        <div id="proficiencies" class="row">
-          <div class="col offset-lg-3 offset-xl-2">
-
-            <div class="container">
-              <div class="proficienciesTitle mt-3 mb-4">
-                <h1 class="mx-auto">PROFICIENCIES</h>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="text-center">
-                  <img src="resources/front-end.svg" style="max-height: 100px;" class="img-fluid" alt="Front End Developer">
-                  <h4>FRONTEND DEVELOPMENT</h4>
-                  <div class="prodesc">It is an open canvas to express the emotions</div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="text-center">
-                  <img src="resources/backend.svg" style="max-height: 100px;" class="img-fluid" alt="Front End Developer">
-                  <h4>BACKEND DEVELOPMENT</h4>
-                  <div class="prodesc">Emotions aren't enough, this is where the Actions are taken</div>
-                </div>
-              </div>
-              <div class="col-12 mt-xl-5 col-md-6">
-                <div class="text-center">
-                  <img src="resources/algorithm.svg" style="max-height: 100px;" class="img-fluid" alt="Front End Developer">
-                  <h4>DATA STRUCTURES AND ALGORITHMS</h4>
-                  <div class="prodesc">Actions take proper planning and implementations, in the right quality, quantity and direction</div>
-                </div>
-              </div>
-              <div class="col-12 mt-xl-5 col-md-6">
-                <div class="text-center">
-                  <img src="resources/1597473975822.png" style="max-height: 100px;" class="img-fluid" alt="Front End Developer">
-                  <h4>JAVA</h4>
-                  <div class="prodesc">A place where all the previous things, are implemented</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Projects -->
-        <div id="project" class="row">
-          <div class="col offset-lg-3 offset-xl-2">
-
-            <div class="container">
-              <div class="projectTitle my-3">
-                <h1 class="mx-auto">PROJECTS</h>
-              </div>
-
-              <div class="row mt-5">
-                <div class="col-12 col-md-6 col-xl-4">
-                  <div class="card h-100">
-                    <img src="resources/Heath Advisor Home Page.png" class="card-img-top" alt="Health Advisor Homepage">
-                    <div class="card-body">
-                      <h5 class="card-title">Nature's Basket</h5>
-                      <p class="card-text">Nature's Basket is an Indian grocery delivery chain of retail stores focused in gourmet food. It has a range of organic food, imported ingredients and exotic foods.
-                      </p>
-                      <div class="card-stacks">
-                        <div class="card-links"><a class="btn btn-outline-success" href="https://github.com/KSrivastawa/Nature-s-Basket" target="_blank">GITHUB</a><a class="btn btn-success" href="https://ornate-beijinho-c34f07.netlify.app" target="_blank">LIVE</a></div>
-                        <div>
-                          <img src="resources/html.svg" alt="html logo">
-                          <img src="resources/css.svg" alt="css logo">
-                          <img src="resources/js.svg" alt="js logo">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-xl-4 my-4 my-md-0">
-                  <div class="card h-100">
-                    <img src="resources/Calendar Holidays Home Page.png" class="card-img-top" alt="Calendar Holidays Homepage">
-                    <div class="card-body">
-                      <h5 class="card-title">Mentimeter</h5>
-                      <p class="card-text">
-                        Engage your audience & eliminate awkward silences
-                        Our easy-to-build presentations, interactive Polls, Quizzes, and Word Clouds mean more participation and less stress.
-                      </p>
-                      <div class='card-stacks'>
-                        <div class="card-links"><a class="btn btn-outline-success" href="https://github.com/amandk5/grandiose-juice-9763" target="_blank">GITHUB</a><a class="btn btn-success" href="https://luxury-gnome-1827a2.netlify.app/" target="_blank">LIVE</a></div>
-                        <div>
-                          <img src="resources/html.svg" alt="html logo">
-                          <img src="resources/css.svg" alt="css logo">
-                          <img src="resources/js.svg" alt="js logo">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-xl-4 my-4 my-md-0">
-                  <div class="card h-100">
-                    <img src="resources/Learn Orb Homepage.png" class="card-img-top" alt="Learn Orb Homepage">
-                    <div class="card-body">
-                      <h5 class="card-title">ZoomCar</h5>
-                      <p class="card-text">
-                        For the uninitiated, is a self-drive car rental service that allows users to rent cars by the hour, day, week or month. It offers a membership-based service that enables individuals to rent vehicles.
-                      </p>
-                      <div class="card-stacks">
-                        <div class="card-links"><a class="btn btn-outline-success" href="https://github.com/Abiramirajasekar/ZoomCar" target="_blank">GITHUB</a><a class="btn btn-success" href="https://calm-taffy-e0d812.netlify.app" target="_blank">LIVE</a></div>
-                        <div>
-                          <img src="resources/html.svg" alt="html logo">
-                          <img src="resources/css.svg" alt="css logo">
-                          <img src="resources/js.svg" alt="js logo">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-           <!--     
-                <div class="col-12 col-md-6 col-xl-4 my-4 my-md-0">
-                  <div class="card h-100 mt-xl-3">
-                    <img src="resources/Zerodha Clone Homepage.png" class="card-img-top" alt="Zerodha Clone Homepage">
-                    <div class="card-body">
-                      <h4 class="card-title">Zerodha Clone</h4>
-                      <p class="card-text">A routing website clone of the broking company, Zerodha
-                      </p>
-                      <div class="card-stacks">
-                        <div class="card-links"><a class="btn btn-success" href="https://routing-navbar-zerodha.netlify.app/" target="_blank">LIVE</a></div>
-                        <div>
-                          <img src="resources/html.svg" alt="html logo">
-                          <img src="resources/css.svg" alt="css logo">
-                          <img src="resources/js.svg" alt="js logo">
-                          <img src="resources/react.svg" alt="react logo">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-xl-4 my-4 my-md-0">
-                  <div class="card h-100 mt-xl-3">
-                    <img src="resources/Expense Manager Homepage.png" class="card-img-top" alt="Expense Manager">
-                    <div class="card-body">
-                      <h4 class="card-title">Expense Manager</h4>
-                      <p class="card-text">An application, that keeps track of all the credit, debit and total transactions made by the user.
-                      </p>
-                      <div class="card-stacks">
-                        <div class="card-links"><a class="btn btn-outline-success" href="https://github.com/soumitha18/ExpenseManager" target="_blank">GITHUB</a><a class="btn btn-success" href="https://expense-manager-manish-soumitha.netlify.app/"
-                          target="_blank">LIVE</a></div>
-                        <div>
-                          <img src="resources/html.svg" alt="html logo">
-                          <img src="resources/css.svg" alt="css logo">
-                          <img src="resources/js.svg" alt="js logo">
-                          <img src="resources/react.svg" alt="react logo">
-                          <img src="resources/mongodb.svg" alt="mongodb logo">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-xl-4 my-4 my-md-0">
-                  <div class="card h-100 mt-xl-3">
-                    <img src="resources/Zomato Tomato.png" class="card-img-top" alt="Zomato Tomato">
-                    <div class="card-body">
-                      <h4 class="card-title">Tomato</h4>
-                      <p class="card-text">An working application clone of the most used food order application, Zomato.
-                      </p>
-                      <div class="card-stacks">
-                        <div class="card-links"><a class="btn btn-outline-success" href="https://github.com/0prodigy/zomato-tomato" target="_blank">GITHUB</a><a class="btn btn-success" href="https://zomato-tomato.tk" target="_blank">LIVE</a></div>
-                        <div>
-                          <img src="resources/html.svg" alt="html logo">
-                          <img src="resources/css.svg" alt="css logo">
-                          <img src="resources/js.svg" alt="js logo">
-                          <img src="resources/react.svg" alt="react logo">
-                          <img src="resources/mongodb.svg" alt="mongodb logo">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Statistics -->
-        <div id="statistics" class="row">
-          <div class="col offset-lg-3 offset-xl-2"> 
-            <div class="statisticsTitle mb-5">
-              <h1 class="mx-auto">My Statistics</h>
-            </div>
-  
-            <div class="row mb-5">
-              <div class="col d-flex justify-content-around flex-wrap">
-                <div class="individualStat">
-                  <div>1150+</div>
-                  <div><h3>Hours</h3> of Coding practice including Data Structure and algorithm</div>
-                </div>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-                <div class="individualStat">
-                  <div>250+</div>
-                  <div><h3>Git</h3>Commits</div>
-                </div>
+    <!-- Style sheet  -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Github calendar -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+    <!-- icon CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
     
-                <div class="individualStat">
-                  <div style="border: 10px solid #7e2cde;">15+</div>
-                  <div><h3>Projects</h3>Done</div>
-                </div>
+    <!-- Tab style  -->
+    <link rel="icon" href="Assets/icons/logo.png" />
+    <title>Ketan Srivastawa | Java Backend Developer</title>
 
-              </div>
-            </div>
-          </div>
+  </head>
+
+  <body>
+
+    <!-- ========== Navbar ========== -->
+    <nav id="nav">
+      <h1> <a href="#">Ketan</a> </h1>
+      <ul class="navigation" >
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#gitSection" class="nav-link">Git Info</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="Assets/icons/Ketan-Srivastawa-Resume.pdf" download="Ketan-Srivastawa-Resume"  onclick="window.open('https://drive.google.com/file/d/1m4lWQIFOsShE-Y_seN37_ge6VgXWIQ3E/view?usp=share_link')">
+          Resume</a></li>
+      </ul>
+
+      <!-- Burger menu  -->
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+
+    <!-- ========== Hero Section ==========  -->
+    <section class="header-container">
+      <img
+        class="profile-image"
+        src="Assets/icons/profile pic 1.png"
+        alt="Professional Pic"
+      />
+        <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&amp;color=blue&amp;size=20&amp;lines=Hey!+It's+Ketan+Srivastawa!;Java+Back-end+Developer...;" style="width: 72%; padding-left: 22%">
+
+      <div class="content-text">
+        <h3>
+          Always enthusiastic to learn and would love to work on new technologies.
+        </h3>
+        
+      </div>
+      <h2 id="resume">
+        <a  href="Assets/icons/Ketan-Srivastawa-Resume.pdf" 
+            download="Ketan-Srivastawa-Resume" 
+            onclick="window.open('https://drive.google.com/file/d/1m4lWQIFOsShE-Y_seN37_ge6VgXWIQ3E/view?usp=share_link')">
+          Resume</a>
+      </h2>
+    </section>
+
+
+    <!-- ========== About Section ========== -->
+    <section class="more-about" id="about">
+      <div id="aboutextra"></div>
+      <h2>All About Me</h2>
+      <div id="details">
+
+        <div id="details1">
+          <img id="logoimg" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/5403918/focus-animation.gif">
         </div>
+        <br>
+        <div id="details2">
 
-        <div>
-          <section class="skills section" id="skills">
-            <h2 class="section__title">My Github Stats</h2>
-            <span class="section__subtitle">My technical level</span>
-            <div className="graph" style="display: flex; justify-content: center; margin-top: 10px;">
-              <img
-                src='http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KSrivastawa&theme=github_dark' />
-            </div>
-            <div className="cards" style="display: flex; flex-wrap: wrap; margin-top: 10px; justify-content: center;">
-              <img src='http://github-profile-summary-cards.vercel.app/api/cards/stats?username=KSrivastawa&theme=github_dark'
-                style="margin-right: 13px;" />
-              <img
-                src='http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=KSrivastawa&theme=github_dark&utcOffset=8'
-                style="margin-left: 1px;" />
-            </div>
-            </section>
+          <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=1000&color=F77312&multiline=true&width=600&height=130&align=right&lines=Creative+coder+and+self-proclaimed+designer;who+specializes+in+Back-end+development.+;I'm+a+self-starter+and+work+well+independently%2C+but+;I'm+also+skilled+at+working+in+teams." alt="">
 
-            <h3 id="gitCal"> Github Calendar </h3>
-            <div id="githubCommits" class="row">
-              <div class="col offset-lg-3 offset-xl-2 p-md-5">
-                <div class="d-none d-md-block" >
-                  -- GitHub Commits --
-                  <div class="calendar">  
-                    
-                    -- Loading stuff --
-                    Loading the data just for you.
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
+          <p> Strongly <b>interested</b> in obtaining a backend
+            developer position to create impactful and scalable products.</p>
 
-       
-       
-
-        <!-- Contact Footer -->
-        <footer class="row mt-5" id="contact">
-          <div class="col offset-xl-2 offset-lg-3">
-
-            <div class="container  text-center my-4">
-              <div>Let's Connect</div>
             
-              <div class="d-flex mx-auto justify-content-center my-2">
-                <div><a href="http://www.linkedin.com/in/ksrivastawa" target="_blank" style="color: black"><i class="fab fa-linkedin contactIcons"></i></a></div>
-                <div class="mx-5"><a href="https://www.hackerrank.com/Ketan_Srivastawa" target="_blank" style="color: black"><i class="fab fa-hackerrank contactIcons"></i></a></div>
-                <div><a href="https://github.com/KSrivastawa" target="_blank" style="color: black"><i class="fab fa-github contactIcons"></i></a></div>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">1350+ hrs</span>
+                <span class="about__info-name">Coding
               </div>
-              <div class="d-flex flex-column flex-md-row justify-content-md-center">
-                <div><i class="fas fa-phone-alt"></i> +91-7488741670</div>
-                <div class="ml-md-3"><i class="fas fa-envelope"></i> rikubabu20@gmail.com</div>
+
+              <div>
+                <span class="about__info-title">550+ Que</span>
+                <span class="about__info-name"
+                  >DSA
               </div>
+
+              <div>
+                <span class="about__info-title">100+ hrs</span>
+                <span class="about__info-name">Soft Skills
+              </div>
+
             </div>
-            <!--  -->
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">616+</span>
+                <span class="about__info-name">
+                  Git <br />
+                  Commits</span
+                >
+              </div>
+
+              <div>
+                <span class="about__info-title">3+</span>
+                <span class="about__info-name"
+                  >Collaborative <br />
+                  Projects</span
+                >
+              </div>
+
+              <div>
+                <span class="about__info-title">4+</span>
+                <span class="about__info-name">Individual<br />Projects</span>
+              </div>
+
+            </div>
+        </div>
+      </div>  
+    </section>
+    
+
+    <!-- ========== Skills section ========== -->
+
+    <section class="skills" id="skills">
+      <div id="skillsextra1"></div>
+      <div id="skillsextra"></div>
+      <h2 class="skill-header">Tech Stacks & Tools</h2>
+
+      <div class="skills-wrapper">
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/java.png"
+            alt="Java"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Java</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/hibernate.png"
+            alt="hibernate"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Hibernate</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/mysql.png"
+            alt="My SQL"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>My SQL</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            style="border-radius: 50%;"
+            src="Assets/icons/springboot.png"
+            alt="Spring Boot"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Spring Boot</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/spring-security.png"
+            alt="My SQL"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Spring Security</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/aws-cloud.png"
+            alt="My SQL"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>AWS Cloud</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+              src="Assets/icons/html.png"
+              alt="HTML"
+              loading="lazy"
+              class="icon"
+            />
+            <h2>HTML</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/css.png"
+            alt="CSS"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>CSS</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/js.png"
+            alt="Javascript"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Javascript</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/vscode.png"
+            alt="VS Code"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>VS Code</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/Sprint-tool.jpeg"
+            alt="VS Code"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Spring tool-4</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/git.png"
+            alt="Git & Github"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Github</h2>
+        </div>
+
+        <div class=" icon-card">
+          <img
+            src="Assets/icons/maven.png"
+            alt="maven"
+            loading="lazy"
+            class="icon"
+          />
+          <h2>Maven</h2>
+        </div>
+      </div>
+    </section>  
+
+
+    <!-- ========== GitHub ========== -->
+      
+    <section id="gitSection">
+      <h2>My Github Contribution</h2>
+      <div class="git--center">
+        <div class="calendar"> 
+          <!-- Loading stuff -->
+          Loading the data just for you.
+        </div>
+      </div>  
+    </section>
+
+    <section class="skills section" id="skills">
+      <h2 style="color: white;" class="section__title">My Github Stats</h2>
+      <span style="color: white;"  class="section__subtitle">My technical level</span>
+   
+      <div className="cards" style="display: flex; flex-wrap: wrap; margin-top: 10px; justify-content: center;">
+        <img src='http://github-profile-summary-cards.vercel.app/api/cards/stats?username=KSrivastawa&theme=github_dark'
+          style="margin-right: 13px;" />
+        <img
+          src='http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=KSrivastawa&theme=github_dark&utcOffset=8'
+          style="margin-left: 1px;" />
+      </div>
+      </section>
+
+
+    <!-- ========== Project Section ========== -->
+    <section class="projects" id="projects">
+      <div id="projectextra"></div>
+
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+
+      <div id="container-1">
+        <img class="img1" src="./Assets/icons/Mini-Project-ER.png">
+
+      <div class="glass">
+        <h3 id="parahead">Online Shoping Application</h3>
+          <div id="para">
+            <p>This application is used by ABC Company admin and their Customer for online shopping This application will help Customer to buy the products and view order details. Customer can register themselves and login. Add product to the cart and purchase it . This application will help Admin to search Product list ,add new products ,remove products . </p>
+            <img id="tech" src="https://skillicons.dev/icons?i=java,mysql,spring,hibernate,maven,vscode,git" alt="">
+            
           </div>
-        </footer>
+          <a id="links" href="https://github.com/KSrivastawa/Online-Shoping-Mini-Ecommerce-Project" target="_blank" class="project-link">Code</a>
+          <a id="links" href="https://drive.google.com/drive/u/0/folders/1GWxkRfTGjiaVNXp2u027kYXcTbvZf1z8" target="_blank" class="project-link">Video</a>
+      </div>
     </div>
 
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <script type="text/javascript" src="portfolio.js"></script>
-</body>
+      <div id="container-1">
+          <img class="img1" src="./Assets/icons/tms-er.png">
+
+        <div class="glass">
+          <h3 id="parahead">Tender management System</h3>
+            <div id="para">
+              <p>Whenever a company requires a service, tender is floated. Company maintains an empaneled list of Vendors. Paneled vendor can only bid for a tender. Every vendor can bid only once against each tender. Against each tender there may be bids from several vendors. The company will then select the most suitable bid and places the order to that vendor </p>
+              <img id="tech" src="https://skillicons.dev/icons?i=java,hibernate,mysql,vscode,git" alt="">
+              
+            </div>
+            <a id="links" href="https://github.com/KSrivastawa/Tender-Management-System_by_JDBC-Project-" target="_blank" class="project-link">Code</a>
+            <a id="links" href="https://drive.google.com/file/d/1ueOyPtzHqduRHqvA_AqTeYRUW-9sgcul/view?usp=share_link" target="_blank" class="project-link">Video</a>
+        </div>
+      </div>
+
+      <div id="container-1">
+        <img class="img1" src="Assets/icons/zoomcar.png">
+
+      <div class="glass">
+        <h3 id="parahead">Zoom Car Application </h3>
+          <div id="para">
+            <p>For the uninitiated, is a self-drive car rental service that allows users to rent cars by the hour, day, week or month. It offers a membership-based service that enables individuals to rent vehicles.</p>
+            <img id="tech" src="https://skillicons.dev/icons?i=js,html,css,git,netlify,vscode" alt="">
+          </div>
+          <a id="links" href="https://github.com/Abiramirajasekar/ZoomCar" target="_blank" class="project-link">Code</a>
+          <a id="links" href="https://calm-taffy-e0d812.netlify.app" target="_blank" class="project-link">Live</a>
+      </div>
+    </div>
+
+    <div id="container-1">
+      <img class="img1" src="Assets/icons/mentimeter.png">
+
+    <div class="glass">
+      <h3 id="parahead">Mentimeter Application </h3>
+        <div id="para">
+          <p>Engage your audience & eliminate awkward silences
+            Our easy-to-build presentations, interactive Polls, Quizzes, and Word Clouds mean more participation and less stress.</p>
+          <img id="tech" src="https://skillicons.dev/icons?i=js,html,css,git,netlify,vscode" alt="">
+        </div>
+        <a id="links" href="https://github.com/amandk5/grandiose-juice-9763" target="_blank" class="project-link">Code</a>
+        <a id="links" href="https://luxury-gnome-1827a2.netlify.app/" target="_blank" class="project-link">Live</a>
+    </div>
+  </div>
+
+  </section>
+
+    <!-- Contact section -->
+  <section class="contact" id="contact">
+      <div id="contactextra"></div>
+      
+      <div id="contactextra2"></div>
+
+      <h2>Contact</h2>
+      <p>Get In Touch With Me</p>
+
+    <div id="contactsec">
+
+        <div class="information">
+          <!-- box1 -->
+          <div class="info-box">
+              <i class="bx bxs-user"></i>
+              <span>Ketan Srivastawa</span>
+          </div>
+          <!-- box2 -->
+          <div class="info-box">
+              <i class="bx bxs-phone"></i>
+              <span><a href="tel:+917488741670"> +91 7488741670</a></span>
+          </div>
+          <!-- box3 -->
+          <div class="info-box">
+              <i class="bx bxs-envelope"></i>
+              <span> <a href="mailto: kt.ketansri@gmail.com"> kt.ketansri@gmail.com</a></span>
+          </div>
+          <!-- box 4 -->
+          <div class="info-box">
+              <i class="bx bxs-map"></i>
+              <span> Siwan, Bihar</span>
+          </div>
+      </div>
+
+
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mpznpoyl" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="number">Number</label>
+              <input
+                type="number"
+                id="number"
+                name="sender-number"
+                placeholder="Enter Your Number"
+                class="input-field"
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <h2>
+
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+                style="background-color: #0c92d0;"
+              />
+            </h2>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <h2 id="footer">Made by Ketan Srivastawa</h2>
+
+   
+  </section>
+
+
+    <div class="socials">
+      <a href = "mailto:kt.ketansri@gmail.com">
+        <img
+          src="Assets/icons/email.gif"
+          alt="Email"
+          loading="lazy"
+          class="socicon"
+      />
+        </a>
+        
+        <a href = "tel:7488741670">
+          <img
+            src="Assets/icons/call.gif"
+            alt="Phone"
+            loading="lazy"
+            class="socicon"
+        />
+          </a>
+      <a id="social" href="https://www.linkedin.com/in/ksrivastawa/" target="_blank"
+        ><img
+          src="Assets/icons/linkedin.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a id="social" href="https://github.com/KSrivastawa" target="_blank"
+        ><img src="Assets/icons/github.gif" alt="Github" class="socicon"
+      /></a> 
+      </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="Assets/icons/upwardarrow.gif"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i>
+
+   
+
+
+    <!--  Website scripts -->
+  </body>
 </html>
+<script src="index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<script>
+  GitHubCalendar(".calendar", "ksrivastawa");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "ksrivastawa", { responsive: true });
+
+  // Use a proxy
+  GitHubCalendar(".calendar", "ksrivastawa", {
+     proxy (ksrivastawa) {
+       return fetch(`https://your-proxy.com/github?user=${ksrivastawa}`)
+     }
+  }).then(r => r.text())
+</script>
+
